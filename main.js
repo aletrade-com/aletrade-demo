@@ -1,1 +1,0 @@
-document.getElementById('root').innerText = 'Bienvenido a la demo de Aletrade';
