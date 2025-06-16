@@ -1,1 +1,23 @@
-body { font-family: sans-serif; background: #f4f4f4; color: #333; }
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f7f7f7;
+}
+h1 {
+  color: #1a202c;
+}
+button {
+  background: #2b6cb0;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+#chat {
+  margin-top: 20px;
+  padding: 10px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
