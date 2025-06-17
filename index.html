@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aletrade Demo - Protegida</title>
   <style>
     body {
@@ -19,6 +18,8 @@
       padding: 2rem;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
+      text-align: center;
     }
     input {
       padding: 0.5rem;
@@ -44,7 +45,7 @@
 </head>
 <body>
   <div class="container">
-    <h2>Acceso restringido</h2>
+    <h2>🔐 Acceso restringido</h2>
     <p>Introduce la contraseña para acceder a la demo:</p>
     <input type="password" id="password" placeholder="Contraseña" />
     <button onclick="checkPassword()">Entrar</button>
@@ -53,11 +54,14 @@
 
   <script>
     function checkPassword() {
+      const correctPassword = "aletrade23";
       const input = document.getElementById("password").value;
-      if (input === "aletrade2025") {
-        window.location.href = "index.html";
+      const error = document.getElementById("error");
+
+      if (input === correctPassword) {
+        window.location.href = "https://aletrade.com"; // Puedes cambiar a otro enlace si prefieres.
       } else {
-        document.getElementById("error").style.display = "block";
+        error.style.display = "block";
       }
     }
   </script>
